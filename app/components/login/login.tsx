@@ -22,16 +22,17 @@ export function Login(props: LoginProps) {
    const [loading, setLoading] = useState(false);
 
   const onLoginClick = (credentials: LoginCredentials) => {
-     setLoading(true);
-    // setAuthError(false);
-    signIn(credentials)
-      .then(() => {
-          router.push('/admin/dashboard');
-      })
-      .catch(() => {
-         setLoading(false);
-        // setAuthError(true);
-      });
+    if(signIn) {
+        setLoading(true);
+        signIn(credentials)
+            .then(() => {
+                router.push('/admin/dashboard');
+            })
+            .catch(() => {
+                setLoading(false);
+                // setAuthError(true);
+            });
+    }
   };
 
 
