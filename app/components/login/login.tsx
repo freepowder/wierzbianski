@@ -48,12 +48,12 @@ export function Login(props: LoginProps) {
         <form className="space-y-4 " onSubmit={handleSubmit(onLoginClick)}>
           <div>
             <label htmlFor="email" className="text-md font-medium text-white block">Email</label>
-            <input id="email" name="email" type="email" {...register("email", { required: true })}
+            <input id="email"  type="email" {...register("email", { required: true })}
                    className="mt-1 p-2 block w-full rounded-md border-gray-800 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"/>
           </div>
           <div>
             <label htmlFor="password" className="text-md font-medium text-white block">Password</label>
-            <input id="password" name="password" type="password" {...register("password", { required: true })}
+            <input id="password"  type="password" {...register("password", { required: true })}
                    className="mt-1 p-2 block w-full rounded-md border-gray-800 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"/>
           </div>
           <div className="flex justify-end">
