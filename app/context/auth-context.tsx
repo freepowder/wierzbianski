@@ -17,7 +17,7 @@ export const AuthContextProvider = (props) => {
   const router = useRouter();
   const [auth, setAuth] = React.useState<Auth>(
       // @ts-ignore
-      localStorage.getItem(LocalStorageKeys.AUTH) ? JSON.parse(localStorage.getItem(LocalStorageKeys.AUTH)) : null,
+      window ? (localStorage.getItem(LocalStorageKeys.AUTH) ? JSON.parse(localStorage.getItem(LocalStorageKeys.AUTH)) : null): null,
   );
 
 
@@ -25,7 +25,7 @@ export const AuthContextProvider = (props) => {
   const signOut= async () => {
     return logout().then((auth) => {
       setAuth(auth);
-      localStorage.removeItem(LocalStorageKeys.AUTH);
+        window ? localStorage.removeItem(LocalStorageKeys.AUTH): '';
       router.push('/login');
     })
         .catch((e) => {
@@ -36,7 +36,7 @@ export const AuthContextProvider = (props) => {
   const signIn = async (credentials: LoginCredentials) => {
     return login(credentials).then((auth) => {
       setAuth(auth);
-      localStorage.setItem(LocalStorageKeys.AUTH, JSON.stringify(auth));
+        window ? localStorage.setItem(LocalStorageKeys.AUTH, JSON.stringify(auth)):'';
       })
       .catch((e) => {
         console.error(e);
