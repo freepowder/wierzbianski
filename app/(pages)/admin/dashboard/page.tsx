@@ -1,6 +1,5 @@
 "use client"
 import React, {useState} from "react";
-// import Content from "@/app/components/content/content";
 import {getContent, updateContent} from "@/app/services/cms-service";
 import TogglePanel from "@/app/components/togglePanel";
 import VideoEdit from "@/app/components/video-edit/video-edit";
@@ -45,10 +44,7 @@ export default function Page(){
                 progress: undefined,
                 theme: "dark",
             });
-
         })
-
-
     }
 
     const onUpdateVideo = (item: {url:string,title:string}, section: SECTIONS, index:number) => {
@@ -58,9 +54,7 @@ export default function Page(){
     };
 
     const onDeleteVideo = (item: {url:string,title:string}, section: SECTIONS) => {
-        const filteredItems = content[section].filter(e => e.url !== item.url)
-        console.log(item)
-        console.log(filteredItems)
+        const filteredItems = content[section].filter((e) => e.url !== item.url)
         // trackUpdate(filteredItems, section)
         if(section === SECTIONS.FEATURED) {
             content.featured = filteredItems
@@ -92,16 +86,16 @@ export default function Page(){
     }
 
     const OnUpdateAbout =() => {
-        const item = document.getElementById('about')?.value;
-        content.about = item
+        const item = document.getElementById('about') as HTMLInputElement;
+        content.about = item.value
         setContent(content);
         makeUpdate()
     }
     const OnUpdateContact =() => {
-        const itemPhone = document.getElementById('c-phone')?.value;
-        const itemEmail = document.getElementById('c-email')?.value;
-        content.email = itemEmail;
-        content.phone = itemPhone;
+        const itemPhone = document.getElementById('c-phone') as HTMLInputElement;
+        const itemEmail = document.getElementById('c-email') as HTMLInputElement;
+        content.email = itemEmail.value;
+        content.phone = itemPhone.value;
         setContent(content);
         makeUpdate()
     }
@@ -109,7 +103,6 @@ export default function Page(){
 
 
     const [addVideo, setAddVideo] = useState(false);
-    const [hasChanges, setHasChanges] = useState(false);
     const [content, setContent] = useState({
         workReel: {
             title: '',
@@ -132,7 +125,6 @@ export default function Page(){
     React.useEffect(() => {
         getContent().then(c => {
             setContent(c[0]);
-            setHasChanges(false)
         })
     },[]);
 
