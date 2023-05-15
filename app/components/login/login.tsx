@@ -5,6 +5,7 @@ import Spinner from "../../components/spinner/spinner";
 import { useRouter } from 'next/navigation';
 import {LoginCredentials} from "@/app/types";
 import {useAuth} from "@/app/context/auth-context";
+import {toast} from "react-toastify";
 /* eslint-disable-next-line */
 export interface LoginProps {}
 
@@ -26,11 +27,33 @@ export function Login(props: LoginProps) {
         setLoading(true);
         signIn(credentials)
             .then(() => {
+
                 router.push('/admin/dashboard');
+                toast('You are logged In!', {
+                    position: "top-right",
+                    autoClose: 10000,
+                    type:'success',
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
             })
             .catch(() => {
                 setLoading(false);
-                // setAuthError(true);
+                toast('Ooops login failed!', {
+                    position: "top-right",
+                    autoClose: 10000,
+                    type:'error',
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
             });
     }
   };

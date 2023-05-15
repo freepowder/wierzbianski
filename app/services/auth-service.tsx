@@ -9,8 +9,8 @@ export async function login(payload: LoginCredentials): Promise<Auth> {
     method: 'POST',
     headers: JSON_HEADERS
   })
-  if (!response.ok) {
-    throw new Error("Network response was not OK");
+  if (response.status!==200) {
+    throw new Error("Error sign in");
   }
   const data = await response.json()
   return data;

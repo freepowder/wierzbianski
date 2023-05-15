@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="42b39ee2-b325-4198-8912-59a98dcd67fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/login/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/auth-service.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/auth-service.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,11 @@
       </map>
     </option>
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -82,7 +88,8 @@
       <option name="presentableId" value="Default" />
       <updated>1683802067075</updated>
       <workItem from="1683802068217" duration="2559000" />
-      <workItem from="1683804647080" duration="67000" />
+      <workItem from="1683804647080" duration="1249000" />
+      <workItem from="1684145630973" duration="590000" />
     </task>
     <servers />
   </component>
