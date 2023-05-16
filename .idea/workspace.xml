@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42b39ee2-b325-4198-8912-59a98dcd67fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/(pages)/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(pages)/admin/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(pages)/admin/dashboard/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/login/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/sections/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sections/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/togglePanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/togglePanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(pages)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(pages)/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/stories/home.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/stories/home.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/icon-128x128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/icon-152x152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/icon-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/icon-384x384.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/icon-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/icon-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/icon-96x96.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,7 @@
       <recent name="$PROJECT_DIR$/app/(pages)" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -84,8 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -100,7 +101,7 @@
       <workItem from="1683802068217" duration="2559000" />
       <workItem from="1683804647080" duration="1249000" />
       <workItem from="1684145630973" duration="3085000" />
-      <workItem from="1684164804413" duration="7429000" />
+      <workItem from="1684164804413" duration="9028000" />
     </task>
     <servers />
   </component>
