@@ -23,8 +23,7 @@ export async function getContent(): Promise<Content[]> {
 export async function updateContent(content:Content): Promise<Content> {
     const URL= CONFIG.API_URL + PATHS.FP.CMS+'/'+ content._id;
     // @ts-ignore
-    const auth = JSON.parse(localStorage.getItem(LocalStorageKeys.AUTH));
-    //TODO check auth.token is valid!
+    const auth = typeof window !== "undefined" ? JSON.parse(localStorage.getItem(LocalStorageKeys.AUTH)): '';
     const response = await fetch(URL, {
         body:JSON.stringify(content),
         method: 'PUT',

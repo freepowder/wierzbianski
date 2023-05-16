@@ -23,7 +23,6 @@ export function Login(props: LoginProps) {
    const [loading, setLoading] = useState(false);
 
   const onLoginClick = (credentials: LoginCredentials) => {
-    // if(signIn) {
         setLoading(true);
         login(credentials)
             .then((auth) => {
@@ -55,7 +54,6 @@ export function Login(props: LoginProps) {
                     theme: "dark",
                 });
             });
-    // }
   };
 
 

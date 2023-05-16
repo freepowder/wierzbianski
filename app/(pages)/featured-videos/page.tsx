@@ -1,16 +1,17 @@
-"use client"
-import React, {useState} from "react";
+import React from "react";
 import VideoCard from "@/app/components/video-card/video-card";
-import {getContent} from "@/app/services/cms-service";
+import {CONFIG} from "@/app/config/config";
+import {PATHS} from "@/app/constants";
 
+async function getData() {
+    const URL= CONFIG.API_URL + PATHS.FP.CMS;
+    const res = await fetch(URL,{ cache: 'no-store' });
+    const data = await res.json();
+    return  data[0].videos ;
+}
 
-export default function Page(){
-    const [content, setContent] = useState( [{title: '', url: ''}]);
-    React.useEffect(() => {
-        getContent().then(c => {
-            setContent(c[0].videos);
-        })
-    },[]);
+export default(async function Page(){
+    const content = await getData();
 
     const theVideos = []
     for (const video of content) {
@@ -36,4 +37,4 @@ export default function Page(){
         </div>
     )
 
-}
+} as unknown as () => JSX.Element)
