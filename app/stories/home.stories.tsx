@@ -1,4 +1,4 @@
-import Home from "../page";
+import Home from "app/(pages)/page";
 
 export default {
     title: "Pages/Home Page",

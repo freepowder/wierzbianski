@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42b39ee2-b325-4198-8912-59a98dcd67fd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/(pages)/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(pages)/admin/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(pages)/admin/dashboard/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/login/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/auth-service.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/auth-service.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sections/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sections/hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/togglePanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/togglePanel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/stories/home.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/stories/home.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +57,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/(pages)" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -89,7 +99,8 @@
       <updated>1683802067075</updated>
       <workItem from="1683802068217" duration="2559000" />
       <workItem from="1683804647080" duration="1249000" />
-      <workItem from="1684145630973" duration="590000" />
+      <workItem from="1684145630973" duration="3085000" />
+      <workItem from="1684164804413" duration="7429000" />
     </task>
     <servers />
   </component>

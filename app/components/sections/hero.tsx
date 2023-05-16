@@ -17,7 +17,7 @@ export default function Hero({reelVideo,featured}:HeroProps){
             <div className="text-6xl font-bold my-20 py-20 text-white">FEATURED</div>
             <div className="text-6xl font-bold my-20  text-white">
                 <div className="mx-auto max-w-screen-lg flex flex-col md:flex-row gap-6 p-6">
-                    {featured.map((it) =>
+                    {featured?.map((it) =>
                         <div key={it.url} className="py-6 px-6 max-w-xs mx-auto bg-black rounded-xl shadow-md space-y-2">
                             <iframe className="w-full aspect-video block mx-auto min-h-72 rounded-md rounded-bl-none rounded-br-none"
                                     src={it.url || 'https://www.youtube.com/embed/-YjpTv3uRpk'}></iframe>

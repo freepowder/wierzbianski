@@ -4,8 +4,9 @@ import React, {useState} from "react";
 import Spinner from "../../components/spinner/spinner";
 import { useRouter } from 'next/navigation';
 import {LoginCredentials} from "@/app/types";
-import {useAuth} from "@/app/context/auth-context";
 import {toast} from "react-toastify";
+import {login} from "@/app/services/auth-service";
+import {LocalStorageKeys} from "@/app/constants";
 /* eslint-disable-next-line */
 export interface LoginProps {}
 
@@ -16,18 +17,17 @@ export function Login(props: LoginProps) {
     handleSubmit,
     formState: { errors },
   } = useForm<LoginCredentials>();
-  const { signIn } = useAuth();
 
     const router = useRouter();
 
    const [loading, setLoading] = useState(false);
 
   const onLoginClick = (credentials: LoginCredentials) => {
-    if(signIn) {
+    // if(signIn) {
         setLoading(true);
-        signIn(credentials)
-            .then(() => {
-
+        login(credentials)
+            .then((auth) => {
+                localStorage.setItem(LocalStorageKeys.AUTH, JSON.stringify(auth));
                 router.push('/admin/dashboard');
                 toast('You are logged In!', {
                     position: "top-right",
@@ -55,7 +55,7 @@ export function Login(props: LoginProps) {
                     theme: "dark",
                 });
             });
-    }
+    // }
   };
 
 

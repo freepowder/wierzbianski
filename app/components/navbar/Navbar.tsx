@@ -1,8 +1,5 @@
-"use client"
-import {useAuth} from "@/app/context/auth-context";
 
 export default function Navbar() {
-    const {auth,signOut} =useAuth()
 
     return(
         <nav className=" fixed bg-black z-20 top-0 left-0 w-full flex items-center justify-between flex-wrap p-6">
@@ -28,12 +25,7 @@ export default function Navbar() {
                        className="block mt-4 uppercase lg:inline-block lg:mt-0 text-dark-200 hover:text-red-600 mr-4">About</a>
                     <a href="/#contact"
                        className="block mt-4 uppercase  lg:inline-block lg:mt-0 text-dark-200 hover:text-red-600 mr-4">Contact</a>
-                    {auth?.user && <>
-                        <a href="/admin/dashboard"
-                           className="block mt-4 uppercase lg:inline-block lg:mt-0 text-dark-200 hover:text-red-600 mr-4 cursor-pointer">CMS</a>
-                        <a onClick={signOut}
-                           className="block mt-4 uppercase  lg:inline-block lg:mt-0 text-dark-200 hover:text-red-600 mr-4 cursor-pointer">Logout</a>
-                    </>}
+
                 </div>
             </div>
         </nav>
