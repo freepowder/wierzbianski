@@ -8,14 +8,14 @@ import {JSON_HEADERS, PATHS} from "@/app/constants";
 import Spinner from "@/app/components/spinner/spinner";
 
 // @ts-ignore
-export default async function Home( props) {
+export default async function Home() {
     const content = await getData();
     return (
         <Suspense fallback={<Spinner />}>
-            <Hero featured={content?.featured} reelVideo={content?.workReel}/>
+            <Hero featured={content[0]?.featured} reelVideo={content[0]?.workReel}/>
             <Services/>
-            <About about={content?.about}/>
-            <Contact email={content?.email} phone={content?.phone}/>
+            <About about={content[0]?.about}/>
+            <Contact email={content[0]?.email} phone={content[0]?.phone}/>
         </Suspense>
     )
 }
@@ -24,7 +24,6 @@ async function getData() {
     const URL= CONFIG.API_URL + PATHS.FP.CMS;
     const res = await fetch(URL,{
         method: 'GET',
-        headers: { ...JSON_HEADERS },
         cache: 'no-store' });
     return res.json();
 

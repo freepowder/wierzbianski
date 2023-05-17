@@ -10,7 +10,6 @@ export default async function FeaturedVideos () {
     const URL= CONFIG.API_URL + PATHS.FP.CMS;
     const res = await fetch(URL,{
         method: 'GET',
-        headers: { ...JSON_HEADERS },
         cache: 'no-store' });
     const data = await res.json();
     const videos: Video[] = data[0].videos
