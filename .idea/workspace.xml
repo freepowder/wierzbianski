@@ -7,9 +7,6 @@
     <list default="true" id="42b39ee2-b325-4198-8912-59a98dcd67fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(pages)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(pages)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/sections/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sections/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/togglePanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/togglePanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/video-edit/video-edit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/video-edit/video-edit.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +104,7 @@
       <workItem from="1683804647080" duration="1249000" />
       <workItem from="1684145630973" duration="3085000" />
       <workItem from="1684164804413" duration="16016000" />
-      <workItem from="1684323555148" duration="811000" />
+      <workItem from="1684323555148" duration="1752000" />
     </task>
     <servers />
   </component>
