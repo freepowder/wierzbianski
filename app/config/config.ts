@@ -6,6 +6,6 @@ export type APP_CONFIG = {
 
 // MF EXAMPLE
 export const CONFIG: APP_CONFIG = {
-  API_URL: 'http://localhost:4000'
+  API_URL: 'https://api.freepowder.io'
 }
 
