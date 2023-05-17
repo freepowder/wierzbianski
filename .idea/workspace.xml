@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="42b39ee2-b325-4198-8912-59a98dcd67fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(pages)/featured-videos/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(pages)/featured-videos/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(pages)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(pages)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/login/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/stories/featured.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/stories/featured.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/stories/home.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/stories/home.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sections/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sections/hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/togglePanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/togglePanel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/video-edit/video-edit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/video-edit/video-edit.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
       <recent name="$PROJECT_DIR$/app/(pages)" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -90,8 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -107,11 +106,24 @@
       <workItem from="1683802068217" duration="2559000" />
       <workItem from="1683804647080" duration="1249000" />
       <workItem from="1684145630973" duration="3085000" />
-      <workItem from="1684164804413" duration="15371000" />
+      <workItem from="1684164804413" duration="16016000" />
+      <workItem from="1684323555148" duration="811000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/layout.tsx</url>
+          <line>17</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

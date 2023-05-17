@@ -1,3 +1,4 @@
+"use client"
 import Video from "@/app/components/video/video";
 import React, {useState} from "react";
 import {VideoCardProps} from "@/app/components/video-card/video-card";

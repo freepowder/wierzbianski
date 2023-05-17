@@ -1,6 +1,5 @@
 import Video from "@/app/components/video/video";
 import React from "react";
-import Link from "next/link";
 export type HeroProps ={
   reelVideo:{  url: string;
       title: string; }
@@ -32,9 +31,9 @@ export default function Hero({reelVideo,featured}:HeroProps){
                     )}
                 </div>
                 <div className="py-6 px-6  mx-auto space-y-2">
-                    <Link href="/featured-videos" target="_blank"
+                    <a href="/featured-videos" target="_blank"
                           className="bg-white text-black font-bold rounded-full mt-6 py-4 px-8 shadow-lg text-xl  tracking-wider hover:border-red hover:text-white hover:bg-red-600">
-                        View all featured videos</Link>
+                        View all featured videos</a>
                 </div>
             </div>
         </div>

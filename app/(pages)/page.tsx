@@ -17,13 +17,11 @@ export default async function Home () {
     const content = await res.json();
 
     return (
-        <>
-            <Suspense fallback={<Spinner />}>
+        <Suspense fallback={<Spinner />}>
             <Hero featured={content?.featured} reelVideo={content?.workReel}/>
             <Services/>
             <About about={content?.about}/>
             <Contact email={content?.email} phone={content?.phone}/>
-            </Suspense>
-        </>
+        </Suspense>
     )
 }
