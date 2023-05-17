@@ -7,10 +7,8 @@ import {LoginCredentials} from "@/app/types";
 import {toast} from "react-toastify";
 import {login} from "@/app/services/auth-service";
 import {LocalStorageKeys} from "@/app/constants";
-/* eslint-disable-next-line */
-export interface LoginProps {}
 
-export function Login(props: LoginProps) {
+const Login = () => {
 
   const {
     register,

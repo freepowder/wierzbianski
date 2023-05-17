@@ -1,25 +1,22 @@
-import React from "react";
+import React, {Suspense} from "react";
 import VideoCard from "@/app/components/video-card/video-card";
 import {CONFIG} from "@/app/config/config";
-import {PATHS} from "@/app/constants";
+import {JSON_HEADERS, PATHS} from "@/app/constants";
+import Spinner from "@/app/components/spinner/spinner";
+import {Video} from "@/app/types/cms-types";
 
-async function getData() {
+// @ts-ignore
+export default async function FeaturedVideos () {
     const URL= CONFIG.API_URL + PATHS.FP.CMS;
-    const res = await fetch(URL,{ cache: 'no-store' });
+    const res = await fetch(URL,{
+        method: 'GET',
+        headers: { ...JSON_HEADERS },
+        cache: 'no-store' });
     const data = await res.json();
-    return  data[0].videos ;
-}
+    const videos: Video[] = data[0].videos
 
-export default(async function Page(){
-    const content = await getData();
-
-    const theVideos = []
-    for (const video of content) {
-        theVideos.push(
-            <VideoCard key={video.url}  url={video.url} title={video.title} />
-        )
-    }
     return(
+        <Suspense fallback={<Spinner />}>
         <div className="max-w-screen-xl mx-auto py-20 px-6">
             <div className="flex flex-col pb-20">
                 <div className="w-full">
@@ -30,11 +27,13 @@ export default(async function Page(){
                             and director of photography. Originally from Poland.</p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-24">
-                        {theVideos}
+                        {videos?.map((video) =>
+                            <VideoCard key={video.url}  url={video.url} title={video.title} />
+                        )}
                     </div>
                 </div>
             </div>
         </div>
-    )
-
-} as unknown as () => JSX.Element)
+        </Suspense>
+    );
+}
